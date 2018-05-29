@@ -36,3 +36,5 @@
 改 bug。
 
 技术的更新迭代速度特别快，尤其是前端领域，发现自己很少有能真正沉淀下来的东西。
+
+![](https://github.com/WuChenDi/wcd-journal/blob/master/screenshots/code-bg01.png)
