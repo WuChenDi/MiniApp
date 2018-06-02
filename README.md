@@ -42,8 +42,6 @@
 
 ![](https://github.com/WuChenDi/wcd-journal/blob/master/screenshots/code-bg01.png)
 
-一入前端深似海，从此妹纸是路人。
-
 从前端小白，在 自我学习的 道路上 渐行渐远。技能越学越多，而学的越多才发现自己会的 好少。
 
 每个 挨踢攻城狮 都是 勇敢的，前端知识 小而杂，技能栈繁多。
