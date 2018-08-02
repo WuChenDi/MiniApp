@@ -9,8 +9,8 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "touristappid",
-	"projectname": "miniapp",
+	"appid": "wxa6e1617433c8f73d",
+	"projectname": "MiniApp",
 	"condition": {
 		"search": {
 			"current": -1,

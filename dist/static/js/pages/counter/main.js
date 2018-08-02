@@ -110,10 +110,10 @@ if (false) {(function () {
   },
   methods: {
     increment: function increment() {
-      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit('increment');
+      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit("increment");
     },
     decrement: function decrement() {
-      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit('decrement');
+      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit("decrement");
     }
   }
 });

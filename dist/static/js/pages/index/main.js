@@ -250,7 +250,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   })]), _vm._v(" "), _c('a', {
     staticClass: "counter",
     attrs: {
-      "href": "/pages/counter/main"
+      "href": "/pages/todolist/main"
     }
   }, [_vm._v("去往Vuex示例页面")])], 1)
 }
