@@ -2,12 +2,13 @@
   "pages": [
     "pages/index/main",
     "pages/counter/main",
-    "pages/logs/main"
+    "pages/logs/main",
+    "pages/todolist/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "WuChenDi",
     "navigationBarTextStyle": "black"
   }
 }

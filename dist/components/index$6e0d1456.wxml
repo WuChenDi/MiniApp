@@ -16,6 +16,6 @@
       <input type="text" class="_input data-v-5b4d3b48 form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
       <input type="text" class="_input data-v-5b4d3b48 form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
     </form>
-    <navigator url="/pages/counter/main" class="_a data-v-5b4d3b48 counter">去往Vuex示例页面</navigator>
+    <navigator url="/pages/todolist/main" class="_a data-v-5b4d3b48 counter">去往Vuex示例页面</navigator>
   </view>
 </template>
