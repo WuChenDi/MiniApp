@@ -60,6 +60,6 @@ export default {
 <style>
 li.done {
   text-decoration: line-through;
-  color: "red";
+  color: red;
 }
 </style>

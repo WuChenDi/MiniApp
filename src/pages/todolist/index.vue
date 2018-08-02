@@ -1,12 +1,19 @@
 <template>
   <div>
     <h1>vujs is good</h1>
+    <Todolist></Todolist>
   </div>
 </template>
 
 
 <script>
-export default {};
+import Todolist from '@/components/Todolist'
+
+export default {
+  components: {
+    Todolist
+  }
+};
 </script>
 
 <style>
