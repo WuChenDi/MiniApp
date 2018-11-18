@@ -1,4 +1,4 @@
-# miniapp
+# mpvue-demo
 
 > A Mpvue project
 

@@ -31,7 +31,6 @@ module.exports = {
     Page: true,
     wx: true,
     getApp: true,
-    getPage: true,
-    requirePlugin: true
+    getPage: true
   }
 }

@@ -1,51 +1,16 @@
-global.webpackJsonp([5],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
+global.webpackJsonp([4],{
+
+/***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(5);
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
-__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].mpType = 'app';
-
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
-app.$mount();
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  // 这个字段走 app.json
-  config: {
-    // 页面前带有 ^ 符号的，会被编译成首页，其他页面可以选填，我们会自动把 webpack entry 里面的入口页面加进去
-    pages: ['pages/logs/main', '^pages/index/main'],
-    window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WuChenDi',
-      navigationBarTextStyle: 'black'
-    }
-  }
-});
-
-/***/ }),
-/* 4 */,
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_0_13_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_0_8_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(53);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(6)
+  __webpack_require__(58)
 }
-var normalizeComponent = __webpack_require__(0)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 
 /* template */
@@ -57,7 +22,7 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_0_13_mpvue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_0_8_mpvue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
   __vue_template__,
   __vue_styles__,
   __vue_scopeId__,
@@ -86,28 +51,105 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 6 */
+
+/***/ 48:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(44);
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
+var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
+app.$mount();
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  config: {
+    pages: ['^pages/books/main'],
+    'window': {
+      'backgroundTextStyle': 'light',
+      'navigationBarBackgroundColor': '#EA5149',
+      'navigationBarTitleText': '蜗牛图书',
+      'navigationBarTextStyle': 'light'
+    },
+    'tabBar': {
+      selectedColor: '#EA5149',
+      list: [{
+        pagePath: 'pages/books/main',
+        text: '图书',
+        iconPath: 'static/img/book.png',
+        selectedIconPath: 'static/img/book-active.png'
+      }, {
+        pagePath: 'pages/comments/main',
+        text: '评论',
+        iconPath: 'static/img/todo.png',
+        selectedIconPath: 'static/img/todo-active.png'
+      }, {
+        pagePath: 'pages/me/main',
+        text: '我',
+        iconPath: 'static/img/me.png',
+        selectedIconPath: 'static/img/me-active.png'
+      }]
+    }
+  }
+});
+
+/***/ }),
+
+/***/ 53:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator__);
+
+
+//
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  created: function created() {
+    var _this = this;
+
+    return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+      return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              // const res = await get('/weapp/demo')
+              // console.log(123, res)
+              // wx.request({
+              //   url:config.host+'/weapp/demo',
+              //   success:function(res){
+              //     console.log(res)
+              //   }
+              // })
+              console.log('小程序启动了');
+
+            case 1:
+            case 'end':
+              return _context.stop();
+          }
+        }
+      }, _callee, _this);
+    }))();
+  }
+});
+
+/***/ }),
+
+/***/ 58:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-  created: function created() {
-    // 调用API从本地缓存中获取数据
-    var logs = wx.getStorageSync('logs') || [];
-    logs.unshift(Date.now());
-    wx.setStorageSync('logs', logs);
-
-    console.log('app created and cache logs by setStorageSync');
-  }
-});
-
 /***/ })
-],[3]);
+
+},[48]);
 //# sourceMappingURL=app.js.map
