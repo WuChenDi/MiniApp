@@ -31,7 +31,7 @@ export default {
     scanBook () {
       wx.scanCode({
         success: (res) => {
-          if(res.result){
+          if (res.result) {
             console.log(res.result)
           }
         }
