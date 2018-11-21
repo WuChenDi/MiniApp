@@ -69,7 +69,8 @@ app.$mount();
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   config: {
-    pages: ['^pages/books/main'],
+    // pages: ['^pages/books/main'],
+    pages: ['^pages/me/main'],
     'window': {
       'backgroundTextStyle': 'light',
       'navigationBarBackgroundColor': '#EA5149',
