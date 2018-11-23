@@ -4,6 +4,8 @@
 const router = require('koa-router')({
     prefix: '/weapp'
 })
+
+// xxx.com/weapp/demo
 const controllers = require('../controllers')
 
 // 从 sdk 中取出中间件
@@ -32,5 +34,10 @@ router.get('/message', controllers.message.get)
 // POST 用来处理微信转发过来的客服消息
 router.post('/message', controllers.message.post)
 
-router.get('/demo', controllers.demo)
+router.get('/demo',controllers.demo)
+router.post('/addbook', controllers.addbook)
+
+router.get('/top', controllers.top)
+
+
 module.exports = router
