@@ -4,8 +4,8 @@ const CONF = {
     tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
       // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
     qcloudAppId: '1256390202',
-    qcloudSecretId: 'AKIDZx89wVivnRpyrVv4ze7MM6brvoTu62jA',
-    qcloudSecretKey: 'JM9gxykGcjaBZidKn11nKdleJlzzlPqY',
+    qcloudSecretId: 'AKIDHRSHuM7gqrhLBpHXaR6nNm03uZkprQwG',
+    qcloudSecretKey: 'IVWO5f4INIGHAsP5e2FIC55tVyhKtJbm',
     wxMessageToken: 'weixinmsgtoken',
     networkTimeout: 30000,
 
