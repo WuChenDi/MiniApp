@@ -28,11 +28,19 @@ export default {
     };
   },
   methods: {
+    async addBook(isbn) {
+      console.log(isbn);
+      const res = await post("/weapp/addbook", {
+        isbn,
+        openid: this.userinfo.openId
+      });
+      showModal("添加成功", `${res.title}添加成功`);
+    },
     scanBook() {
       wx.scanCode({
         success: res => {
           if (res.result) {
-            console.log(res.result);
+            this.addBook(res.result)
           }
         }
       });
