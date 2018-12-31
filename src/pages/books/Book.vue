@@ -3,7 +3,7 @@
     <Card
       :key='book.id'
       v-for="book in books"
-      :book='books'
+      :book='book'
     ></Card>
   </div>
 </template>
