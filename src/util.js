@@ -28,6 +28,7 @@ function request(url, method, data, header = {}) {
   })
 }
 
+// 显示模态对话框
 export function showModal(title, content) {
   wx.showModal({
     title,
@@ -35,6 +36,7 @@ export function showModal(title, content) {
     showCancel: false
   })
 }
+
 export function showSuccess(text) {
   wx.showToast({
     title: text,

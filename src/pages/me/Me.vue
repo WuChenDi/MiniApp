@@ -26,7 +26,7 @@
 <script>
 import qcloud from "wafer2-client-sdk";
 import YearProgress from "@/components/YearProgress";
-import { showSuccess, post } from "@/util";
+import { showSuccess, post, showModal } from "@/util";
 import config from "@/config";
 export default {
   components: {
@@ -46,9 +46,7 @@ export default {
         isbn,
         openid: this.userinfo.openId
       });
-      if (res.code == 0 && res.data.title) {
-        showModal("添加成功", `${res.title}添加成功`);
-      }
+      showModal("添加成功", `${res.title}添加成功`);
     },
     scanBook() {
       wx.scanCode({
