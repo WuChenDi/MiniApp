@@ -34,8 +34,8 @@ export default {
     imgUrls() {
       // 如果通用 请用chunk函数  比如lodash的chunk方法
       let res = this.tops;
-      console.log([res.slice(0, 3), res.slice(3, 6), res.slice(6)]);
       return [res.slice(0, 3), res.slice(3, 6), res.slice(6)];
+      // console.log([res.slice(0, 3), res.slice(3, 6), res.slice(6)]);
     }
   },
   methods: {

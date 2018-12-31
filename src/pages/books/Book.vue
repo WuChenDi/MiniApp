@@ -83,6 +83,7 @@ export default {
   },
   mounted() {
     this.getList(true);
+    this.getTop();
   }
 };
 </script>
