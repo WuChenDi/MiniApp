@@ -41,6 +41,7 @@ router.post('/message', controllers.message.post)
 
 router.get('/demo', controllers.demo)
 router.post('/addbook', controllers.addbook)
+router.get('/booklist', controllers.booklist)
 
 router.get('/top', controllers.top)
 
