@@ -1,7 +1,7 @@
 {
   "name": "mpvue-demo",
   "version": "1.0.0",
-  "description": "A Mpvue project",
+  "description": "WuChenDi图书系统全栈开发",
   "author": "WuChenDi <996194720@qq.com>",
   "private": true,
   "scripts": {

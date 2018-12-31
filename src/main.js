@@ -11,7 +11,7 @@ export default{
     'window': {
       'backgroundTextStyle': 'light',
       'navigationBarBackgroundColor': '#EA5149',
-      'navigationBarTitleText': '蜗牛图书',
+      'navigationBarTitleText': 'Di-got图书系统',
       'navigationBarTextStyle': 'light'
     },
     'tabBar': {
@@ -31,7 +31,7 @@ export default{
         },
         {
           pagePath: 'pages/me/main',
-          text: '我',
+          text: '个人',
           iconPath: 'static/img/me.png',
           selectedIconPath: 'static/img/me-active.png'
         }

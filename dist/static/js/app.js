@@ -73,7 +73,7 @@ app.$mount();
     'window': {
       'backgroundTextStyle': 'light',
       'navigationBarBackgroundColor': '#EA5149',
-      'navigationBarTitleText': '蜗牛图书',
+      'navigationBarTitleText': 'Di-got图书系统',
       'navigationBarTextStyle': 'light'
     },
     'tabBar': {
@@ -90,7 +90,7 @@ app.$mount();
         selectedIconPath: 'static/img/todo-active.png'
       }, {
         pagePath: 'pages/me/main',
-        text: '我',
+        text: '个人',
         iconPath: 'static/img/me.png',
         selectedIconPath: 'static/img/me-active.png'
       }]
