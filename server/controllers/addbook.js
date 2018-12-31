@@ -1,6 +1,8 @@
 const https = require('https')
 /* mysql 数据库修改 **server/config.js** */
-const { mysql } = require('../qcloud')
+const {
+  mysql
+} = require('../qcloud')
 
 /**
  * 新增图书
@@ -12,7 +14,10 @@ const { mysql } = require('../qcloud')
 module.exports = async ctx => {
   /* post 请求在 body 字段里面 */
   /* 前端 Me.vue 发过来的 isbn, openid */
-  const { isbn, openid } = ctx.request.body
+  const {
+    isbn,
+    openid
+  } = ctx.request.body
   console.log('添加图书', isbn, openid)
   if (isbn && openid) {
     /* 防止重复添加图书 */
@@ -34,7 +39,14 @@ module.exports = async ctx => {
     const bookinfo = await getJSON(url)
     /* 显示豆瓣图书单项信息 */
     const rate = bookinfo.rating.average
-    const { title, image, alt, publisher, summary, price } = bookinfo
+    const {
+      title,
+      image,
+      alt,
+      publisher,
+      summary,
+      price
+    } = bookinfo
     /* tags 变成 -> tags: "科幻 1000, 小说 500, ..." */
     const tags = bookinfo.tags
       .map(v => {
