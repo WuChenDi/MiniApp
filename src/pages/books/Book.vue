@@ -28,10 +28,12 @@
 // 2. page>0 数据长度<10 停止触底加载
 import { get } from "@/util";
 import Card from "@/components/Card";
+import TopSwiper from "@/components/TopSwiper";
 
 export default {
   components: {
-    Card
+    Card,
+    TopSwiper
   },
   data() {
     return {

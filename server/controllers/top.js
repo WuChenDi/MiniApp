@@ -1,11 +1,13 @@
-const {mysql} = require('../qcloud')
+const {
+  mysql
+} = require('../qcloud')
 
-module.exports = async (ctx)=>{
+module.exports = async (ctx) => {
   const top = await mysql('books')
-                      .select('id','title','image','count')
-                      .orderBy('count','desc')
-                      .limit(9)
+    .select('id', 'title', 'image', 'count')
+    .orderBy('count', 'desc')
+    .limit(9)
   ctx.state.data = {
-    list:top
+    list: top
   }
 }
