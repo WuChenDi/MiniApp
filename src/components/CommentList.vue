@@ -38,8 +38,8 @@
 
 <script>
 export default {
-  props: ["comments"]
-};
+  props: ['comments']
+}
 </script>
 
 <style lang='scss'>

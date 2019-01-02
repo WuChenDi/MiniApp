@@ -1,7 +1,6 @@
 
-
-module.exports = async (ctx)=>{
-  ctx.state.data = {
-    msg:'hello 小程序后台123'
-  }
+module.exports = async (ctx) => {
+    ctx.state.data = {
+        msg: 'hello 小程序后台123'
+    }
 }

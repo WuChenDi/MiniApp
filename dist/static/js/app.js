@@ -128,10 +128,10 @@ app.$mount();
               //     console.log(res)
               //   }
               // })
-              console.log("小程序启动了");
+              console.log('小程序启动了');
 
             case 1:
-            case "end":
+            case 'end':
               return _context.stop();
           }
         }

@@ -24,82 +24,82 @@
 </template>
 
 <script>
-import qcloud from "wafer2-client-sdk";
-import YearProgress from "@/components/YearProgress";
-import { showSuccess, post, showModal } from "@/util";
-import config from "@/config";
+import qcloud from 'wafer2-client-sdk'
+import YearProgress from '@/components/YearProgress'
+import { showSuccess, post, showModal } from '@/util'
+import config from '@/config'
 export default {
   components: {
     YearProgress
   },
-  data() {
+  data () {
     return {
       userinfo: {
-        avatarUrl: "http://image.shengxinjing.cn/rate/unlogin.png",
-        nickName: ""
+        avatarUrl: 'http://image.shengxinjing.cn/rate/unlogin.png',
+        nickName: ''
       }
-    };
+    }
   },
   methods: {
-    async addBook(isbn) {
-      const res = await post("/weapp/addbook", {
+    async addBook (isbn) {
+      const res = await post('/weapp/addbook', {
         isbn,
         openid: this.userinfo.openId
-      });
-      showModal("添加成功", `${res.title}添加成功`);
+      })
+      showModal('添加成功', `${res.title}添加成功`)
     },
-    scanBook() {
+    scanBook () {
       wx.scanCode({
         success: res => {
           if (res.result) {
-            this.addBook(res.result);
+            this.addBook(res.result)
           }
         }
-      });
+      })
     },
-    loginSuccess(res) {
-      showSuccess("登录成功");
-      wx.setStorageSync("userinfo", res);
-      this.userinfo = res;
+    loginSuccess (res) {
+      showSuccess('登录成功')
+      wx.setStorageSync('userinfo', res)
+      this.userinfo = res
     },
-    login() {
+    login () {
       wx.showToast({
-        title: "登录中",
-        icon: "loading"
-      });
-      qcloud.setLoginUrl(config.loginUrl);
-      const session = qcloud.Session.get();
+        title: '登录中',
+        icon: 'loading'
+      })
+      qcloud.setLoginUrl(config.loginUrl)
+      const session = qcloud.Session.get()
       if (session) {
         qcloud.loginWithCode({
           success: res => {
-            console.log("没过期的登录", res);
-            this.loginSuccess(res);
+            console.log('没过期的登录', res)
+            this.loginSuccess(res)
           },
           fail: err => {
-            console.error(err);
+            console.error(err)
           }
-        });
+        })
       } else {
         qcloud.login({
           success: res => {
-            console.log("登录成功", res);
-            this.loginSuccess(res);
+            console.log('登录成功', res)
+            this.loginSuccess(res)
           },
           fail: err => {
-            console.error(err);
+            console.error(err)
           }
-        });
+        })
       }
     }
   },
-  onShow() {
-    wx.showShareMenu();
-    let userinfo = wx.getStorageSync("userinfo");
+  onShow () {
+    wx.showShareMenu()
+    let userinfo = wx.getStorageSync('userinfo')
     if (userinfo) {
-      this.userinfo = userinfo;
+      this.userinfo = userinfo
     }
   }
-};
+}
 </script>
 
 <style lang='scss'>

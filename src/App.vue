@@ -1,6 +1,6 @@
 <script>
 export default {
-  async created() {
+  async created () {
     // const res = await get('/weapp/demo')
     // console.log(123, res)
     // wx.request({
@@ -9,9 +9,9 @@ export default {
     //     console.log(res)
     //   }
     // })
-    console.log("小程序启动了");
+    console.log('小程序启动了')
   }
-};
+}
 </script>
 
 <style>

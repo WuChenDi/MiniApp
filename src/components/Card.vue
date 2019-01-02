@@ -42,26 +42,26 @@
 </template>
 
 <script>
-import Rate from "@/components/Rate";
+import Rate from '@/components/Rate'
 export default {
   components: {
     Rate
   },
-  props: ["book"],
+  props: ['book'],
   computed: {
-    detailUrl() {
-      return "/pages/detail/main?id=" + this.book.id;
+    detailUrl () {
+      return '/pages/detail/main?id=' + this.book.id
     }
   },
   methods: {
-    preview() {
+    preview () {
       wx.previewImage({
         current: this.book.image,
         urls: [this.book.image]
-      });
+      })
     }
   }
-};
+}
 </script>
 
 <style lang='scss' scoped>

@@ -55,18 +55,18 @@
 </template>
 
 <script>
-import Rate from "@/components/Rate";
+import Rate from '@/components/Rate'
 export default {
   components: {
     Rate
   },
-  props: ["info"],
+  props: ['info'],
   computed: {
-    userinfo() {
-      return this.info.user_info || {};
+    userinfo () {
+      return this.info.user_info || {}
     }
   }
-};
+}
 </script>
 
 <style lang='scss'>

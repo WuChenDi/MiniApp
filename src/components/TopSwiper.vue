@@ -29,23 +29,23 @@
 
 <script>
 export default {
-  props: ["tops"],
+  props: ['tops'],
   computed: {
-    imgUrls() {
+    imgUrls () {
       // 如果通用 请用chunk函数  比如lodash的chunk方法
-      let res = this.tops;
-      return [res.slice(0, 3), res.slice(3, 6), res.slice(6)];
+      let res = this.tops
+      return [res.slice(0, 3), res.slice(3, 6), res.slice(6)]
       // console.log([res.slice(0, 3), res.slice(3, 6), res.slice(6)]);
     }
   },
   methods: {
-    bookDetail(item) {
+    bookDetail (item) {
       wx.navigateTo({
-        url: "/pages/detail/main?id=" + item.id
-      });
+        url: '/pages/detail/main?id=' + item.id
+      })
     }
   }
-};
+}
 </script>
 
 <style lang='scss'>

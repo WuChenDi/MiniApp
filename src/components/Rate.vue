@@ -14,14 +14,14 @@
 // vue-tiny-rate
 export default {
   props: {
-    value: { type: [Number, String], default: "0" }
+    value: { type: [Number, String], default: '0' }
   },
   computed: {
-    style() {
-      return `width:${this.value / 2}em`;
+    style () {
+      return `width:${this.value / 2}em`
     }
   }
-};
+}
 </script>
 <style lang='scss'>
 .rate {
