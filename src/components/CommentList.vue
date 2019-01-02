@@ -10,6 +10,7 @@
       class="comment"
       v-for='comment in comments'
       :key='comment.id'
+      @click='handleClick(comment)'
     >
       <div class="user">
         <div class="inline">
@@ -38,8 +39,17 @@
 
 <script>
 export default {
-  props: ['comments']
-}
+  props: ["comments", "type"],
+  methods: {
+    handleClick(comment) {
+      if (this.type === "user") {
+        wx.navigateTo({
+          url: "/pages/detail/main?id=" + comment.bookid
+        });
+      }
+    }
+  }
+};
 </script>
 
 <style lang='scss'>
