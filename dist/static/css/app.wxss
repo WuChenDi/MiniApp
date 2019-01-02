@@ -5,11 +5,20 @@
   margin-bottom: 10rpx;
 }
 .text-primary {
-  color: #EA5149;
+  color: #ea5149;
+}
+.page-title {
+  padding-left: 40rpx;
+  background: #eee;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+.right {
+  float: right;
 }
 .btn {
   color: white;
-  background: #EA5A49;
+  background: #ea5a49;
   margin-bottom: 20rpx;
   padding-left: 30rpx;
   padding-left: 30rpx;
@@ -20,5 +29,5 @@
   width: 100%;
 }
 .btn:active {
-  background: #FA5A49;
+  background: #fa5a49;
 }

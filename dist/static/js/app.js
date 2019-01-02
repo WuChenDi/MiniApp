@@ -8,9 +8,9 @@ global.webpackJsonp([5],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(68)
+  __webpack_require__(69)
 }
-var normalizeComponent = __webpack_require__(2)
+var normalizeComponent = __webpack_require__(1)
 /* script */
 
 /* template */
@@ -110,8 +110,6 @@ app.$mount();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator__);
 
 
-//
-
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   created: function created() {
@@ -130,10 +128,10 @@ app.$mount();
               //     console.log(res)
               //   }
               // })
-              console.log('小程序启动了');
+              console.log("小程序启动了");
 
             case 1:
-            case 'end':
+            case "end":
               return _context.stop();
           }
         }
@@ -144,7 +142,7 @@ app.$mount();
 
 /***/ }),
 
-/***/ 68:
+/***/ 69:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -1,14 +1,18 @@
 <template>
   <div>
     <BookInfo :info='info'></BookInfo>
-    <div class="comment">
+    <CommentList :comments="comments"></CommentList>
+    <div
+      class="comment"
+      v-if="showAdd"
+    >
       <textarea
         v-model='comment'
         class='textarea'
         :maxlength='100'
         placeholder='请输入图书短评'
       ></textarea>
-      <div class="location">
+      <div class='location'>
         地理位置：
         <switch
           color='#EA5A49'
@@ -17,7 +21,7 @@
         ></switch>
         <span class='text-primary'>{{location}}</span>
       </div>
-      <div class="phone">
+      <div class='phone'>
         手机型号：
         <switch
           color='#EA5A49'
@@ -39,6 +43,7 @@
 <script>
 import { get, post, showModel } from "@/util";
 import BookInfo from "@/components/BookInfo";
+import CommentList from "@/components/CommentList";
 
 export default {
   data() {
@@ -53,7 +58,21 @@ export default {
     };
   },
   components: {
-    BookInfo
+    BookInfo,
+    CommentList
+  },
+  computed: {
+    showAdd() {
+      // 没登录
+      if (!this.userinfo.openId) {
+        return false;
+      }
+      // 评论页面里查到有自己的openid
+      if (this.comments.filter(v => v.openid === this.userinfo.openId).length) {
+        return false;
+      }
+      return true;
+    }
   },
   methods: {
     async getDetail() {

@@ -1,8 +1,6 @@
-
 <script>
-
 export default {
-  async created () {
+  async created() {
     // const res = await get('/weapp/demo')
     // console.log(123, res)
     // wx.request({
@@ -11,23 +9,32 @@ export default {
     //     console.log(res)
     //   }
     // })
-    console.log('小程序启动了')
+    console.log("小程序启动了");
   }
-}
+};
 </script>
 
 <style>
-.text-footer{
+.text-footer {
   text-align: center;
   font-size: 12px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
-.text-primary{
-  color:#EA5149;
+.text-primary {
+  color: #ea5149;
 }
-.btn{
-  color:white;
-  background:#EA5A49;
+.page-title {
+  padding-left: 20px;
+  background: #eee;
+  line-height: 40px;
+  font-size: 14px;
+}
+.right {
+  float: right;
+}
+.btn {
+  color: white;
+  background: #ea5a49;
   margin-bottom: 10px;
   padding-left: 15px;
   padding-left: 15px;
@@ -37,7 +44,7 @@ export default {
   height: 40px;
   width: 100%;
 }
-.btn:active{
-  background: #FA5A49;
+.btn:active {
+  background: #fa5a49;
 }
 </style>
