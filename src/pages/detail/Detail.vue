@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import { get, post, showModel } from '@/util'
+import { get, post, showModal } from '@/util'
 import BookInfo from '@/components/BookInfo'
 import CommentList from '@/components/CommentList'
 
@@ -94,7 +94,7 @@ export default {
     },
     async addComment () {
       if (this.comment === '') {
-        showModel('请输入内容')
+        showModal('请输入内容')
         return
       }
       // 用户的openid 图书id 评论内容 手机型号  地理位置
@@ -110,7 +110,7 @@ export default {
         this.comment = ''
         this.getComments()
       } catch (e) {
-        showModel('失败', e.msg)
+        showModal('失败', e.msg)
       }
     },
     async getComments () {

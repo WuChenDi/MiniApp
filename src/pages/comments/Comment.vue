@@ -18,55 +18,55 @@
 </template>
 
 <script>
-import { get } from "@/util";
-import CommentList from "@/components/CommentList";
-import Card from "@/components/Card";
+import { get } from '@/util'
+import CommentList from '@/components/CommentList'
+import Card from '@/components/Card'
 export default {
-  data() {
+  data () {
     return {
       comments: [],
       books: [],
       userinfo: {}
-    };
+    }
   },
   components: {
     CommentList,
     Card
   },
   methods: {
-    init() {
-      wx.showNavigationBarLoading();
-      this.getComments();
-      this.getBooks();
-      wx.hideNavigationBarLoading();
+    init () {
+      wx.showNavigationBarLoading()
+      this.getComments()
+      this.getBooks()
+      wx.hideNavigationBarLoading()
     },
-    async getBooks() {
-      const books = await get("/weapp/booklist", {
+    async getBooks () {
+      const books = await get('/weapp/booklist', {
         openid: this.userinfo.openId
-      });
-      this.books = books.list;
+      })
+      this.books = books.list
     },
-    async getComments() {
-      const comments = await get("/weapp/commentlist", {
+    async getComments () {
+      const comments = await get('/weapp/commentlist', {
         openid: this.userinfo.openId
-      });
-      this.comments = comments.list;
+      })
+      this.comments = comments.list
     }
   },
-  onPullDownRefresh() {
-    this.init();
-    wx.stopPullDownRefresh();
+  onPullDownRefresh () {
+    this.init()
+    wx.stopPullDownRefresh()
   },
-  onShow() {
+  onShow () {
     if (!this.userinfo.openId) {
-      let userinfo = wx.getStorageSync("userinfo");
+      let userinfo = wx.getStorageSync('userinfo')
       if (userinfo) {
-        this.userinfo = userinfo;
-        this.init();
+        this.userinfo = userinfo
+        this.init()
       }
     }
   }
-};
+}
 </script>
 
 <style>
